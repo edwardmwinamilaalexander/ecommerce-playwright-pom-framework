@@ -17,7 +17,7 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 ## 2. Key Features
 
-- 70+ automated end-to-end tests
+- 75+ automated end-to-end tests
 - Page Object Model (POM) architecture
 - Reusable fixtures for dependency injection
 - Storage state authentication for fast, stable login
@@ -30,7 +30,7 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 ## 3. Tech Stack
 
-- **Playwright** (Chromium, Firefox, WebKit, Mobile Emulation)
+- **Playwright** (Chromium, Firefox, WebKit)
 - **TypeScript**
 - Page Object Model (POM)
 - Playwright Fixtures
@@ -72,5 +72,6 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 - Designed using industry-standard automation practices
 - Scalable for real-world production testing
+- Exposure to  Playwright MCP Server
 - Easy to extend with new test scenarios and environments
 - Supports cross-browser testing out of the box
