@@ -2,7 +2,7 @@ name: Publish Allure Report to GitHub Pages
 
 on:
   workflow_run:
-    workflows: ["Playwright Tests"]
+    workflows: ['Playwright Tests']
     types:
       - completed
 
@@ -22,6 +22,8 @@ jobs:
         with:
           name: allure-report
           path: ./allure-report
+          run-id: ${{ github.event.workflow_run.id }} # ← tells it WHERE to look
+          github-token: ${{ secrets.GITHUB_TOKEN }} # ← authorises cross-workflow access
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -33,10 +33,19 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Install Allure CLI          # ← moved up, before tests run
+        run: npm install -g allure-commandline --force
+
       - name: Run Playwright tests
         run: npx playwright test
+        if: always()                      # ← removed, keep default behaviour here
+
+      - name: Generate Allure HTML report # ← moved before uploads, runs even if tests fail
+        if: always()
+        run: allure generate allure-results --clean -o allure-report
 
       - name: Upload Playwright HTML report
+        if: always()                      # ← ensures upload even on test failure
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
@@ -44,19 +53,15 @@ jobs:
           retention-days: 14
 
       - name: Upload Allure results
+        if: always()                      # ← ensures upload even on test failure
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results/
           retention-days: 14
 
-      - name: Install Allure CLI
-        run: npm install -g allure-commandline --force
-
-      - name: Generate Allure HTML report
-        run: allure generate allure-results --clean -o allure-report
-
       - name: Upload Allure HTML report
+        if: always()                      # ← ensures upload even on test failure
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
