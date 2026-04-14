@@ -73,3 +73,5 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 - Scalable for real-world production testing
 - Easy to extend with new test scenarios and environments
 - Supports cross-browser testing out of the box
+
+![Allure Results](images/allure-results.png)
