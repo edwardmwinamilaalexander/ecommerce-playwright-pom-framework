@@ -1,55 +1,68 @@
+🚀 Playwright E2E Automation Framework
 
-🚀 **Playwright E2E Automation Framework**
+A complete end-to-end automation framework built with Playwright and TypeScript, covering the full e-commerce user journey.
 
-Excited to share a project I’ve been working on — a complete **end-to-end automation framework** built with **Playwright + TypeScript**, covering the full e-commerce user journey 🛒
+🧪 Test Coverage
+✅ Login
+✅ Products
+✅ Cart
+✅ Checkout Information
+✅ Checkout Overview
+✅ Order Completion
+⚙️ Key Features
+🚀 75+ automated end-to-end tests
+🧩 Page Object Model (POM) architecture
+♻️ Reusable fixtures for dependency injection
+🔐 Storage state authentication for fast, stable login
+👥 Multi-user authentication (practice, test, student accounts)
+🔄 CI/CD ready with GitHub Actions
+📊 Allure reporting with HTML report generation
+🧼 Clean, scalable folder structure for production use
+🛠️ Tech Stack
+Playwright (Chromium, Firefox, WebKit)
+TypeScript
+Page Object Model (POM)
+Playwright Fixtures
+GitHub Actions (CI/CD)
+Allure Reports
+📁 Project Structure
+├── pages
+│   ├── base.page.ts
+│   ├── login.page.ts
+│   ├── products.page.ts
+│   ├── cart.page.ts
+│   ├── checkout-info.page.ts
+│   ├── checkout-overview.page.ts
+│   └── orderComplete.page.ts
+│
+├── tests
+│   ├── fixtures
+│   │   └── fixtures.ts
+│   ├── setup
+│   │   └── login.spec.ts
+│   ├── products.spec.ts
+│   ├── cart.spec.ts
+│   ├── checkout.info.spec.ts
+│   ├── checkout.overview.spec.ts
+│   └── orderComplete.spec.ts
+│
+├── data
+│   └── test-data.ts
+│
+└── playwright.config.ts
 
----
+🌟 Highlights
+💡 Designed using industry-standard automation practices
+📈 Scalable for real-world production testing
+🧪 Exposure to Playwright MCP Server
+➕ Easy to extend with new test scenarios and environments
+🌍 Cross-browser testing supported out of the box
 
-### 🧪 **Test Coverage**
+# Install dependencies
+npm install
 
-✔️ Login
-✔️ Products
-✔️ Cart
-✔️ Checkout Information
-✔️ Checkout Overview
-✔️ Order Completion
+# Run tests
+npx playwright test
 
----
-
-### ⚙️ **Key Features**
-
-🔹 75+ automated E2E tests
-🔹 Page Object Model (POM) architecture
-🔹 Reusable fixtures for dependency injection
-🔹 Storage state authentication for faster, more stable logins
-🔹 Multi-user support (practice, test, student accounts)
-🔹 CI/CD integration with GitHub Actions
-🔹 Allure reporting with HTML reports
-🔹 Clean & scalable folder structure
-
----
-
-### 🛠️ **Tech Stack**
-
-• Playwright (Chromium, Firefox, WebKit)
-• TypeScript
-• POM Design Pattern
-• Playwright Fixtures
-• GitHub Actions
-• Allure Reports
-
----
-
-### 🌟 **Highlights**
-
-✨ Built using industry-standard automation practices
-✨ Scalable for real-world production environments
-✨ Hands-on experience with Playwright MCP Server
-✨ Easily extendable for new scenarios & environments
-✨ Cross-browser testing out of the box
-
----
-
-💬 I’d love to hear your thoughts or feedback!
-
-#Playwright #AutomationTesting #QA #TypeScript #E2E #SoftwareTesting #DevOps #TestAutomation
+# Open report
+npx playwright show-report
