@@ -48,7 +48,7 @@ export default defineConfig({
       },
     },
 
-    // 3) DESKTOP AUTHENTICATED PROJECTS
+    // 3) DESKTOP AUTHENTICATED PROJECTS ONLY
     {
       name: 'practice-chromium',
       use: {
@@ -71,36 +71,6 @@ export default defineConfig({
       name: 'student-chromium',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: '.auth/student-user.json',
-      },
-      dependencies: ['setup'],
-      testIgnore: ['**/login.spec.ts'],
-    },
-
-    // 📱 4) MOBILE PROJECTS (NEW)
-
-    {
-      name: 'practice-mobile-chrome',
-      use: {
-        ...devices['Pixel 5'],
-        storageState: '.auth/practice-user.json',
-      },
-      dependencies: ['setup'],
-      testIgnore: ['**/login.spec.ts'],
-    },
-    {
-      name: 'test-mobile-safari',
-      use: {
-        ...devices['iPhone 13'],
-        storageState: '.auth/test-user.json',
-      },
-      dependencies: ['setup'],
-      testIgnore: ['**/login.spec.ts'],
-    },
-    {
-      name: 'student-mobile-safari',
-      use: {
-        ...devices['iPhone 13'],
         storageState: '.auth/student-user.json',
       },
       dependencies: ['setup'],
