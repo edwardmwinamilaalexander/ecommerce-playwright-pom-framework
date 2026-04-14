@@ -2,6 +2,8 @@
 
 A complete end-to-end automation framework built with **Playwright** and **TypeScript**, covering the full e-commerce journey:
 
+---
+
 ## 🚀 Test Coverage
 
 - Login  
@@ -38,6 +40,7 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 ## 📂 Project Structure
 
+```bash id="f3k1pz"
 .
 ├── pages
 │   ├── base.page.ts
@@ -47,6 +50,7 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 │   ├── checkout-info.page.ts
 │   ├── checkout-overview.page.ts
 │   └── orderComplete.page.ts
+│
 ├── tests
 │   ├── fixtures
 │   │   └── fixtures.ts
@@ -57,10 +61,6 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 │   ├── checkout.info.spec.ts
 │   ├── checkout.overview.spec.ts
 │   └── orderComplete.spec.ts
-├── data
-│   └── test-data.ts
-└── playwright.config.ts
-
 │
 ├── data
 │   └── test-data.ts
