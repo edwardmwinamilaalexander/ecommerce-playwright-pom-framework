@@ -47,17 +47,20 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 │   ├── checkout-info.page.ts
 │   ├── checkout-overview.page.ts
 │   └── orderComplete.page.ts
-│
 ├── tests
 │   ├── fixtures
 │   │   └── fixtures.ts
 │   ├── setup
-│   ├── login.spec.ts
+│   │   └── login.spec.ts
 │   ├── products.spec.ts
 │   ├── cart.spec.ts
 │   ├── checkout.info.spec.ts
 │   ├── checkout.overview.spec.ts
 │   └── orderComplete.spec.ts
+├── data
+│   └── test-data.ts
+└── playwright.config.ts
+
 │
 ├── data
 │   └── test-data.ts
