@@ -1,4 +1,4 @@
-# Playwright E2E Automation Framework — QA Brains E-Commerce
+# Playwright E2E Automation Framework
 
 A complete end-to-end automation framework built with **Playwright** and **TypeScript**, covering the full e-commerce journey:
 
