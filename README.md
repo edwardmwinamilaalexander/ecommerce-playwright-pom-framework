@@ -17,7 +17,7 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 ## 2. Key Features
 
-- 75+ automated end-to-end tests
+- 80+ automated end-to-end tests
 - Page Object Model (POM) architecture
 - Reusable fixtures for dependency injection
 - Multi-user authentication (practice, test, student accounts)
