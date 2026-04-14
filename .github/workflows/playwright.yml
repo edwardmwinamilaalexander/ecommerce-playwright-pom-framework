@@ -12,6 +12,7 @@ jobs:
     timeout-minutes: 60
 
     env:
+      BASE_URL: ${{ vars.BASE_URL }}
       TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
       TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
       PRACTICE_USER_EMAIL: ${{ secrets.PRACTICE_USER_EMAIL }}
