@@ -38,28 +38,28 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 ## 📂 Project Structure
 
-```bash
-pages/
-  base.page.ts
-  login.page.ts
-  products.page.ts
-  cart.page.ts
-  checkout-info.page.ts
-  checkout-overview.page.ts
-  orderComplete.page.ts
-
-tests/
-  fixtures/
-    fixtures.ts
-  setup/
-  login.spec.ts
-  products.spec.ts
-  cart.spec.ts
-  checkout.info.spec.ts
-  checkout.overview.spec.ts
-  orderComplete.spec.ts
-
-data/
-  test-data.ts
-
-playwright.config.ts
+.
+├── pages
+│   ├── base.page.ts
+│   ├── login.page.ts
+│   ├── products.page.ts
+│   ├── cart.page.ts
+│   ├── checkout-info.page.ts
+│   ├── checkout-overview.page.ts
+│   └── orderComplete.page.ts
+│
+├── tests
+│   ├── fixtures
+│   │   └── fixtures.ts
+│   ├── setup
+│   ├── login.spec.ts
+│   ├── products.spec.ts
+│   ├── cart.spec.ts
+│   ├── checkout.info.spec.ts
+│   ├── checkout.overview.spec.ts
+│   └── orderComplete.spec.ts
+│
+├── data
+│   └── test-data.ts
+│
+└── playwright.config.ts
