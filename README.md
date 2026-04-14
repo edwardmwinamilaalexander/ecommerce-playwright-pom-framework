@@ -1,5 +1,5 @@
-🧪 Playwright E2E Automation Framework — QA Brains E‑Commerce
-A complete end‑to‑end automation framework built with Playwright + TypeScript, covering the full e‑commerce flow:
+Playwright E2E Automation Framework — QA Brains E‑Commerce
+A complete end‑to‑end automation framework built with Playwright and TypeScript, covering the full e‑commerce journey:
 
 Login
 
@@ -7,52 +7,62 @@ Products
 
 Cart
 
-Checkout Info
+Checkout Information
 
 Checkout Overview
 
-Order Complete
+Order Completion
 
-✔ 75+ Tests Passing
-✔ Page Object Model
-✔ Fixtures for dependency injection
-✔ Multi‑user authentication (practice, test, student)
-✔ CI/CD ready
-✔ Allure reporting support
-🚀 Tech Stack
+Key Features
+75+ automated end‑to‑end tests
+
+Page Object Model architecture
+
+Reusable fixtures for dependency injection
+
+Multi‑user authentication (practice, test, student accounts)
+
+CI/CD ready with GitHub Actions
+
+Allure reporting support with HTML report generation
+
+Clean, scalable folder structure suitable for production environments
+
+Tech Stack
 Playwright (Chromium, Firefox, WebKit)
 
 TypeScript
 
 Page Object Model (POM)
 
-Fixtures
+Playwright Fixtures
 
 GitHub Actions CI/CD
 
 Allure Reports
 
+Project Structure
 pages/
-base.page.ts
-login.page.ts
-products.page.ts
-cart.page.ts
-checkout-info.page.ts
-checkout-overview.page.ts
-orderComplete.page.ts
+  base.page.ts
+  login.page.ts
+  products.page.ts
+  cart.page.ts
+  checkout-info.page.ts
+  checkout-overview.page.ts
+  orderComplete.page.ts
 
 tests/
-fixtures/
-fixtures.ts
-setup/
-login.spec.ts
-products.spec.ts
-cart.spec.ts
-checkout.info.spec.ts
-checkout.overview.spec.ts
-orderComplete.spec.ts
+  fixtures/
+    fixtures.ts
+  setup/
+  login.spec.ts
+  products.spec.ts
+  cart.spec.ts
+  checkout.info.spec.ts
+  checkout.overview.spec.ts
+  orderComplete.spec.ts
 
 data/
-test-data.ts
+  test-data.ts
 
 playwright.config.ts
