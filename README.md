@@ -1,47 +1,44 @@
-Playwright E2E Automation Framework — QA Brains E‑Commerce
-A complete end‑to‑end automation framework built with Playwright and TypeScript, covering the full e‑commerce journey:
+# Playwright E2E Automation Framework — QA Brains E-Commerce
 
-Login
+A complete end-to-end automation framework built with **Playwright** and **TypeScript**, covering the full e-commerce journey:
 
-Products
+## 🚀 Test Coverage
 
-Cart
+- Login  
+- Products  
+- Cart  
+- Checkout Information  
+- Checkout Overview  
+- Order Completion  
 
-Checkout Information
+---
 
-Checkout Overview
+## ✨ Key Features
 
-Order Completion
+- ✅ 75+ automated end-to-end tests  
+- 🧱 Page Object Model (POM) architecture  
+- ♻️ Reusable fixtures for dependency injection  
+- 👥 Multi-user authentication (practice, test, student accounts)  
+- ⚙️ CI/CD ready with GitHub Actions  
+- 📊 Allure reporting with HTML report generation  
+- 📁 Clean, scalable folder structure for production use  
 
-Key Features
-75+ automated end‑to‑end tests
+---
 
-Page Object Model architecture
+## 🛠 Tech Stack
 
-Reusable fixtures for dependency injection
+- Playwright (Chromium, Firefox, WebKit)  
+- TypeScript  
+- Page Object Model (POM)  
+- Playwright Fixtures  
+- GitHub Actions (CI/CD)  
+- Allure Reports  
 
-Multi‑user authentication (practice, test, student accounts)
+---
 
-CI/CD ready with GitHub Actions
+## 📂 Project Structure
 
-Allure reporting support with HTML report generation
-
-Clean, scalable folder structure suitable for production environments
-
-Tech Stack
-Playwright (Chromium, Firefox, WebKit)
-
-TypeScript
-
-Page Object Model (POM)
-
-Playwright Fixtures
-
-GitHub Actions CI/CD
-
-Allure Reports
-
-Project Structure
+```bash
 pages/
   base.page.ts
   login.page.ts
