@@ -1,0 +1,10 @@
+node_modules/
+test-results/
+playwright-report/
+test-artifacts/
+blob-report/
+.env
+.auth/
+*.log
+.DS_Store
+*.tsbuildinfo

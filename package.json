@@ -1,0 +1,19 @@
+{
+  "name": "playwright-qabrainse2e-automation",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript automation for the QA Brains ecommerce practice site",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:auth": "playwright test --project=setup",
+    "report": "playwright show-report"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.8.3"
+  }
+}
