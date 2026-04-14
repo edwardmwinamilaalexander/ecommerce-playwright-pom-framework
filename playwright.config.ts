@@ -31,17 +31,15 @@ export default defineConfig({
 
   projects: [
     // 1) SETUP PROJECT — MUST RUN FIRST
-
     {
       name: 'setup',
       testMatch: /.*\.setup\.ts/,
       use: {
-        storageState: undefined, // MUST be undefined so login page loads
+        storageState: undefined,
       },
     },
 
-    // 2) LOGGED-OUT PROJECT — runs login.spec.ts only
-
+    // 2) LOGGED-OUT PROJECT
     {
       name: 'logged-out',
       testMatch: ['**/login.spec.ts'],
@@ -50,8 +48,7 @@ export default defineConfig({
       },
     },
 
-    // 3) AUTHENTICATED PROJECTS — depend on setup
-
+    // 3) DESKTOP AUTHENTICATED PROJECTS
     {
       name: 'practice-chromium',
       use: {
@@ -61,7 +58,6 @@ export default defineConfig({
       dependencies: ['setup'],
       testIgnore: ['**/login.spec.ts'],
     },
-
     {
       name: 'test-chromium',
       use: {
@@ -71,11 +67,40 @@ export default defineConfig({
       dependencies: ['setup'],
       testIgnore: ['**/login.spec.ts'],
     },
-
     {
       name: 'student-chromium',
       use: {
         ...devices['Desktop Chrome'],
+        storageState: '.auth/student-user.json',
+      },
+      dependencies: ['setup'],
+      testIgnore: ['**/login.spec.ts'],
+    },
+
+    // 📱 4) MOBILE PROJECTS (NEW)
+
+    {
+      name: 'practice-mobile-chrome',
+      use: {
+        ...devices['Pixel 5'],
+        storageState: '.auth/practice-user.json',
+      },
+      dependencies: ['setup'],
+      testIgnore: ['**/login.spec.ts'],
+    },
+    {
+      name: 'test-mobile-safari',
+      use: {
+        ...devices['iPhone 13'],
+        storageState: '.auth/test-user.json',
+      },
+      dependencies: ['setup'],
+      testIgnore: ['**/login.spec.ts'],
+    },
+    {
+      name: 'student-mobile-safari',
+      use: {
+        ...devices['iPhone 13'],
         storageState: '.auth/student-user.json',
       },
       dependencies: ['setup'],
