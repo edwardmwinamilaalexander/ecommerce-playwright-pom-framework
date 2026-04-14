@@ -17,9 +17,10 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 
 ## 2. Key Features
 
-- 80+ automated end-to-end tests
+- 70+ automated end-to-end tests
 - Page Object Model (POM) architecture
 - Reusable fixtures for dependency injection
+- Storage state authentication for fast, stable login
 - Multi-user authentication (practice, test, student accounts)
 - CI/CD ready with GitHub Actions
 - Allure reporting with HTML report generation
@@ -73,5 +74,3 @@ A complete end-to-end automation framework built with **Playwright** and **TypeS
 - Scalable for real-world production testing
 - Easy to extend with new test scenarios and environments
 - Supports cross-browser testing out of the box
-
-![Allure Results](images/allure-results.png)
